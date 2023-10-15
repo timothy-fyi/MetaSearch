@@ -9,4 +9,4 @@ Installation steps:
 
 Tips:
 1. If the movie/tv show/game has multiple words, ensure to wrap your query in quotes. For example: metasearch "houses october built"
-2. 
+2. It is possible to run across some python specific errors, all error handling isn't captured yet
