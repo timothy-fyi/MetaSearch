@@ -5,8 +5,8 @@
 # Installation steps:
 1. Download .zip folder
 2. Open your command prompt
-3. Navigate to the folder where the .zip is downloaded
-4. Type pip install metasearch.zip (ensure you are in the folder where the .zip is downloaded!)
+3. Navigate to the folder where the .zip is downloaded (ex. ```cd C:\Users\your_name\Downloads```)
+4. Type ```pip install metasearch.zip``` (ensure you are in the folder where the .zip is downloaded!)
 5. Run Meta Search from your command prompt at anytime, just type ```meta "movie or tv show or game here"```
 
 # Tips:
