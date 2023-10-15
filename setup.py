@@ -1,16 +1,11 @@
 import setuptools
 
-# with open("README.md", "r", encoding="utf-8") as fhand:
-#     long_description = fhand.read()
-
 setuptools.setup(
     name="meta-search",
     version="0.0.1",
     author="hot pancakes",
     author_email="itshotpancakes@gmail.com",
     description=("A quick metacritic search tool"),
-    # long_description=long_description,
-    # long_description_content_type="text/markdown",
     url="",
     project_urls={
         "Bug Tracker": "",

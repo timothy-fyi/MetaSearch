@@ -27,9 +27,7 @@ def metasearch(search_term):
         else:
             index_position = 0
             user_search_url = 'https://www.metacritic.com' + page_links[index_position]
-
-    # user_search_url = 'https://www.metacritic.com' + page_links[0]
-
+            
     search_results_page = requests.get(user_search_url, headers={'User-Agent': 'Mozilla/5.0'}).text
     results_soup = BeautifulSoup(search_results_page, "html.parser")
 
