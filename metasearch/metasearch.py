@@ -67,7 +67,10 @@ def metasearch(search_term):
         )
 
     elif search_type == 'game':
-        game_release_date = results_soup.find('div', class_= 'c-gameDetails_ReleaseDate').text
+        try:
+            game_release_date = results_soup.find('div', class_= 'c-gameDetails_ReleaseDate').text
+        except AttributeError:
+            return print('Your search was not for a valid game, movie, or TV show. Please try again.')
         print(
             f'\nTitle: {search_title.strip()}\n'
             f'{game_release_date}\n\n'
