@@ -1,5 +1,7 @@
 # A simple command line Meta Critic search tool
 
+![Demo](https://im2.ezgif.com/tmp/ezgif-2-2b6ddf5ba3.gif)
+
 # Installation steps:
 1. Download .zip folder
 2. Open your command prompt
