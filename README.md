@@ -5,10 +5,10 @@
 2. Open your command prompt
 3. Navigate to the folder where the .zip is downloaded
 4. Type pip install metasearch.zip (ensure you are in the folder where the .zip is downloaded!)
-5. Run Meta Search from your command prompt at anytime, just type ```ms "movie or tv show or game here"```
+5. Run Meta Search from your command prompt at anytime, just type ```meta "movie or tv show or game here"```
 
 # Tips:
-- If the movie/tv show/game has multiple words, ensure to wrap your query in quotes. For example: ```ms "houses october built"```
+- If the movie/tv show/game has multiple words, ensure to wrap your query in quotes. For example: ```meta "houses october built"```
 - It is possible to run across some python specific errors, all error handling isn't captured yet
 
 # Planned Updates:
