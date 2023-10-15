@@ -40,12 +40,31 @@ def metasearch(search_term):
         search_description = results_soup.find('span', class_= 'c-productDetails_description').text
     search_critic_score = results_soup.find('div', class_= 'c-siteReviewScore_background-critic_medium').text
     search_user_score = results_soup.find('div', class_= 'c-siteReviewScore_user').text
+    try:
+        search_type = results_soup.find('div', attrs={'class': 'c-pageProduct'})['type']
+        if search_type == 'movie':
+            meta_data = []
+            search_meta_data = results_soup.find('div', class_= 'c-heroMetadata')
+            for meta in search_meta_data.find_all('span'):
+                meta_data.append(meta.text.strip())
+            run_time = meta_data[-1]
+    except:
+        pass
 
-    # print(search_description)
-    print(
-        f'''Title: {search_title.strip()}\n
+    try:
+        print(
+            f'''Title: {search_title.strip()}
+Run Time: {run_time}\n
 Critic Score: {search_critic_score.strip()}
 User Score: {search_user_score.strip()}\n
 Description: {search_description.strip()}
-        '''
-    )
+            '''
+        )
+    except NameError:
+        print(
+            f'''Title: {search_title.strip()}\n
+Critic Score: {search_critic_score.strip()}
+User Score: {search_user_score.strip()}\n
+Description: {search_description.strip()}
+            '''
+        )
