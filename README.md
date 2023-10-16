@@ -1,6 +1,6 @@
 # A simple command line Meta Critic search tool
 
-![Demo](https://im2.ezgif.com/tmp/ezgif-2-2b6ddf5ba3.gif)
+![Demo](https://i.ibb.co/BrN1K7X/metasearchdemo.gif)
 
 # Installation steps:
 1. Download .zip folder
