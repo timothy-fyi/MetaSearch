@@ -16,7 +16,7 @@ def metasearch(search_term):
             if a.text:
                 page_links.append(a['href'])
     except AttributeError:
-        return print('Result not found. Please try again.')
+        return print('\nResult not found. Please try again.')
 
     page_titles = []
     search_results_two = soup.find_all('p', class_= 'g-text-medium-fluid')
@@ -35,7 +35,7 @@ def metasearch(search_term):
     try:
         search_title = results_soup.find('div', class_= 'c-productHero_title').text
     except AttributeError:
-        return print('Your search was not for a valid game, movie, or TV show. Please try again.')
+        return print('\nYour search was not for a valid game, movie, or TV show. Please try again.')
     
     try:
         search_description = results_soup.find('span', class_= 'c-productionDetailsGame_description').text
@@ -70,7 +70,7 @@ def metasearch(search_term):
         try:
             game_release_date = results_soup.find('div', class_= 'c-gameDetails_ReleaseDate').text
         except AttributeError:
-            return print('Your search was not for a valid game, movie, or TV show. Please try again.')
+            return print('\nYour search was not for a valid game, movie, or TV show. Please try again.')
         print(
             f'\nTitle: {search_title.strip()}\n'
             f'{game_release_date}\n\n'
@@ -95,4 +95,4 @@ def metasearch(search_term):
             f'Description: {search_description.strip()}\n'
         )
     else:
-        return print('Search type not valid. Please try again.')
+        return print('\nSearch type not valid. Please try again.')

@@ -11,7 +11,10 @@
 
 # Tips:
 - If the movie/tv show/game has multiple words, ensure to wrap your query in quotes. For example: ```meta "houses october built"```
-- It is possible to run across some python specific errors, all error handling isn't captured yet
 
 # Planned Updates:
 - Retreiving expanded search descriptions (currently only displays visible text within the decription before the "Read More" setion)
+
+# Known Bugs
+- SOME searches may not return the results you are looking for, IF you don't type the EXACT name of the game/movie/tv show. For example, if you search "Diablo 2", "Diablo 4" will return, but if you search "Diablo II: Lord of Destruction", you will get the correct result. This doesn't happen with all searches, but in some cases it does. This isn't ideal, so I plan to improve the logic to fix this in the future.
+- It is possible to run across some python specific errors, all error handling isn't captured yet
