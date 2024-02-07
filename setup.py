@@ -3,8 +3,8 @@ import setuptools
 setuptools.setup(
     name="meta-search",
     version="0.0.1",
-    author="hot pancakes",
-    author_email="itshotpancakes@gmail.com",
+    author="timothy fyi",
+    author_email="refer to github",
     description=("A quick metacritic search tool"),
     url="",
     project_urls={
