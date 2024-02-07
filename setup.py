@@ -20,7 +20,7 @@ setuptools.setup(
     python_requires=">=3.6",
     entry_points={
         "console_scripts": [
-            "meta = metasearch.cli:main",
+            "meta = meta-me.cli:main",
         ]
     }
 )
