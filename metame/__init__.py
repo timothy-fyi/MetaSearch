@@ -1,1 +1,1 @@
-from meta-me.metame import metasearch
+from metame import metasearch
