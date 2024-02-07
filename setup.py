@@ -1,7 +1,7 @@
 import setuptools
 
 setuptools.setup(
-    name="meta-search",
+    name="meta-me",
     version="0.0.1",
     author="timothy fyi",
     author_email="refer to github",
