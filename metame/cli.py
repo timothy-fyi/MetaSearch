@@ -1,5 +1,5 @@
 import argparse
-from metame import metasearch
+from metasearch import metasearch
 
 def main():
     parser = argparse.ArgumentParser(
